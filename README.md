@@ -32,6 +32,11 @@ Then run Postgres Sink:
     
 ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img4.PNG)
 
+[postgres]
+Host: postgres
+user: postgres
+password: kafkademo
+db: demo
 ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img5.PNG)
 
 Then fill with data:
