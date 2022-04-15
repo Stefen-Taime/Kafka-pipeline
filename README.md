@@ -24,10 +24,15 @@ Then run MySQL Source:
     http POST localhost:8083/connectors @connect/mysql-source.json
     ./bin/kafka-avro-console-consumer --topic mysql.demo.customers --from-beginning
 
+![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img3.PNG)
 
 Then run Postgres Sink:
 
     http POST localhost:8083/connectors @connect/postgres-sink.json
+    
+![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img4.PNG)
+
+![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img5.PNG)
 
 Then fill with data:
 
