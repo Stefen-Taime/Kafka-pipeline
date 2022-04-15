@@ -101,12 +101,15 @@ Add sample query
 	    select before->addressLine1 rcpt, concat('Your address was changed to ', after->addressLine1) message
 	from customers where before->addressLine1 <> after->addressLine1;
 
-update AddressLine1 column (Table Customers)
+ #### update AddressLine1 column (Table Customers)
 		![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img12.PNG)
 	
 Check the data:
 
     ./bin/kafka-console-consumer --topic ADDRESSLINE1_CHANGED_NOTIFICATION --from-beginning
     
+    ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img13.PNG)
+ ### Kibana
+    ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img14.PNG)
 # Inspiration
 https://github.com/szczeles/kafkaconnect-demo
