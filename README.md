@@ -10,7 +10,7 @@
  
 ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img.PNG)
 
-# Adminer => localhost:8085
+#### Adminer => localhost:8085
 [mysql]
 Host: mysql
 user: root
