@@ -17,27 +17,27 @@ user: root
 password: kafkademo
 db: demo
 
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img2.PNG)
+![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img2.PNG)
 
 Then run MySQL Source:
 
     http POST localhost:8083/connectors @connect/mysql-source.json
     ./bin/kafka-avro-console-consumer --topic mysql.demo.customers --from-beginning
 
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img3.PNG)
+![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img3.PNG)
 
 Then run Postgres Sink:
 
     http POST localhost:8083/connectors @connect/postgres-sink.json
     
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img4.PNG)
+![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img4.PNG)
 
 [postgres]
 Host: postgres
 user: postgres
 password: kafkademo
 db: demo
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img5.PNG)
+![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img5.PNG)
 
 Then fill with data:
 
@@ -61,14 +61,14 @@ Finally, setup source and sink:
     http POST localhost:8083/connectors @connect/mongo-source.json 
     http POST localhost:8083/connectors @connect/postgres-mongo-sink.json
     
- ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img7.PNG)
+ ![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img7.PNG)
    
 
 ### Events + PII masking
 
     http POST localhost:8083/connectors @connect/postgres-mongo-sink-no-pii.json
     
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img8.PNG)
+![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img8.PNG)
 
 ### Elasticsearch
 
@@ -81,11 +81,11 @@ Check results:
     curl http://localhost:9200/mysql.demo.customers/_search?pretty=true&q=*:*
 
 
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img9.PNG)
+![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img9.PNG)
 
 ### Kibana
 
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img11.PNG)
+![Image(https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img11.PNG)
 
 ### KSQL processing
 
@@ -102,14 +102,14 @@ Add sample query
 	from customers where before->addressLine1 <> after->addressLine1;
 
  #### update AddressLine1 column (Table Customers)
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img12.PNG)
+![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img12.PNG)
 	
 Check the data:
 
     ./bin/kafka-console-consumer --topic ADDRESSLINE1_CHANGED_NOTIFICATION --from-beginning
     
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img13.PNG)
+![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img13.PNG)
  ### Kibana
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img14.PNG)
+![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img14.PNG)
 # Inspiration
 https://github.com/szczeles/kafkaconnect-demo
