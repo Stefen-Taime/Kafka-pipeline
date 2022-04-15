@@ -95,13 +95,11 @@ Connect to console:
 
 Add sample query
 
-    set 'auto.offset.reset'='earliest';
+set 'auto.offset.reset'='earliest';
 create stream customers with(kafka_topic='mysql.demo.customers', value_format='AVRO');
 create stream addressLine1_changed_notification with (value_format='JSON') as 
     select before->addressLine1 rcpt, concat('Your address was changed to ', after->addressLine1) message
 from customers where before->addressLine1 <> after->addressLine1;
-
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img10.PNG)
 
 
 Check the data:
