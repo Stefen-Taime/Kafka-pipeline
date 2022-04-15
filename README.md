@@ -1,6 +1,6 @@
 # Kafka Connect Demo
 
-![Architecture](https://github.com/szczeles/szczeles.github.io/blob/master/images/Summary.svg)
+![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/Kafka%20(1).png)
 
 [Slides](https://gitpitch.com/szczeles/public-speaking/kafkaconnect)
 
