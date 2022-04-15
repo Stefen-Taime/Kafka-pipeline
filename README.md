@@ -10,6 +10,15 @@
  
 ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img.PNG)
 
+# Adminer => localhost:8085
+[mysql]
+Host: mysql
+user: root
+password: kafkademo
+db: demo
+
+![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img2.PNG)
+
 Then run MySQL Source:
 
     http POST localhost:8083/connectors @connect/mysql-source.json
