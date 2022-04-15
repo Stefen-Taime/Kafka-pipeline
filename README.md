@@ -110,6 +110,6 @@ Check the data:
     
 ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img13.PNG)
  ### Kibana
-    ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img14.PNG)
+![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img14.PNG)
 # Inspiration
 https://github.com/szczeles/kafkaconnect-demo
