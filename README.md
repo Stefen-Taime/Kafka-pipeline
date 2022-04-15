@@ -68,7 +68,7 @@ Finally, setup source and sink:
 
     http POST localhost:8083/connectors @connect/postgres-mongo-sink-no-pii.json
     
-    ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img8.PNG)
+![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img8.PNG)
 
 ### Elasticsearch
 
