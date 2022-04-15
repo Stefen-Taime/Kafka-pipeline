@@ -81,6 +81,12 @@ Check results:
     curl http://localhost:9200/mysql.demo.customers/_search?pretty=true&q=*:*
 
 
+![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img9.PNG)
+
+### Kibana
+
+![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img11.PNG)
+
 ### KSQL processing
 
 Connect to console:
