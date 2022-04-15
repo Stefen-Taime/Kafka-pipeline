@@ -7,7 +7,8 @@
 
     chmod a+x manage.sh
     sh manage.sh up
-  
+ 
+ https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img.PNG
 
 Then run MySQL Source:
 
