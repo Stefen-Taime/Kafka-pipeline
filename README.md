@@ -1,4 +1,4 @@
-# Kafka Connect Demo
+# Kafka Connect Pipeline
 
 ![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/Kafka%20(1).png)
 
@@ -8,7 +8,7 @@
     chmod a+x manage.sh
     sh manage.sh up
  
-![Architecture](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img.PNG)
+![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img.PNG)
 
 #### Adminer => localhost:8085
 [mysql]
