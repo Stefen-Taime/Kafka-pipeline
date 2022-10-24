@@ -109,7 +109,6 @@ Check the data:
     ./bin/kafka-console-consumer --topic ADDRESSLINE1_CHANGED_NOTIFICATION --from-beginning
     
 ![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img13.PNG)
- ### Kibana
-![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img14.PNG)
+ 
 # Inspiration
 https://github.com/szczeles/kafkaconnect-demo
