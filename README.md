@@ -83,9 +83,6 @@ Check results:
 
 ![Image](https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img9.PNG)
 
-### Kibana
-
-![Image(https://github.com/Stefen-Taime/Kafka-pipeline/blob/main/img/img11.PNG)
 
 ### KSQL processing
 
